@@ -1,0 +1,22 @@
+package pack1;
+
+class Animal {
+    String species;
+
+    Animal(String species) {
+        this.species = species;
+    }
+
+    void displaySpecies() {
+        System.out.println("Species: " + species);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Animal a = new Animal("Lion");
+
+        System.out.println("Species: " + a.species);
+        a.displaySpecies();
+    }
+}
