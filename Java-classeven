@@ -1,0 +1,20 @@
+package evenpackage;
+
+class Even {
+    static boolean check(int n) {
+        return n % 2 == 0;
+    }
+}
+
+import evenpackage.Even;
+
+public class Main {
+    public static void main(String[] args) {
+        int n = 10;
+
+        if (Even.check(n))
+            System.out.println(n + " is even");
+        else
+            System.out.println(n + " is not even");
+    }
+}
